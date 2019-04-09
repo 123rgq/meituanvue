@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    mkdir 文件
+    https://www.cnblogs.com/niuxiaoling/p/8269095.html
+    谷歌调试
+    # 事件阻止默认行为
+    <!-- 阻止单击事件继续传播 -->
+    <a v-on:click.stop="doThis"></a>
+    阻止事件冒泡
+    <a @clik.stop="doThis"></a>
+    <!-- 提交事件不再重载页面 -->
+    <form v-on:submit.prevent="onSubmit"></form>
+
+    <!-- 修饰符可以串联 -->
+    <a v-on:click.stop.prevent="doThat"></a>
+
+    <!-- 只有修饰符 -->
+    <form v-on:submit.prevent></form>
+
+    <!-- 添加事件监听器时使用事件捕获模式 -->
+    <!-- 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理 -->
+    <div v-on:click.capture="doThis">...</div>
+
+    <!-- 只当在 event.target 是当前元素自身时触发处理函数 -->
+    <!-- 即事件不是从内部元素触发的 -->
+    <div v-on:click.self="doThat">...</div>
+
+
+    #路由
+    export default router
+    编译版本中的
+    vue.config.js可选文件
+    module.export = {
+        runtimeCompiler: true,
+    }
+
+    <!-- 不相关的组件通信vuex -->
+    <!-- 全局安装koa2 -->
+    npm install -g koa-generator
+    koa2 项目名称 创建目录
+    es6引擎
+    初始化
+    koa2 -e koa2-learn
+    cnpm install
+    SET DEBUG=koa* & npm start koa2-learn
+</body>
+</html>
