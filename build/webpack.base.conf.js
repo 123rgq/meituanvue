@@ -9,6 +9,7 @@ function resolve (dir) {
 }
 
 const createLintingRule = () => ({
+<<<<<<< HEAD
   // test: /\.(js|vue)$/,
   // loader: 'eslint-loader',
   // enforce: 'pre',
@@ -17,6 +18,16 @@ const createLintingRule = () => ({
   //   formatter: require('eslint-friendly-formatter'),
   //   emitWarning: !config.dev.showEslintErrorsInOverlay
   // }
+=======
+  test: /\.(js|vue)$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  include: [resolve('src'), resolve('test')],
+  options: {
+    formatter: require('eslint-friendly-formatter'),
+    emitWarning: !config.dev.showEslintErrorsInOverlay
+  }
+>>>>>>> 7b5bc93c09906e4ae015f119239878fe7b4996e3
 })
 
 module.exports = {
@@ -40,7 +51,12 @@ module.exports = {
   },
   module: {
     rules: [
+<<<<<<< HEAD
       ...(config.dev.useEslint ? [createLintingRule()] : []),
+=======
+      // eslint配置
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
+>>>>>>> 7b5bc93c09906e4ae015f119239878fe7b4996e3
       {
         test: /\.vue$/,
         loader: 'vue-loader',
